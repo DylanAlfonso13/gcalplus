@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Google Calendar Task Enhancer",
+    "version": "1.0",
+    "description": "Sort, reorder, and add subtasks to Google Calendar tasks.",
+    "permissions": ["storage"],
+    "host_permissions": ["https://calendar.google.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://calendar.google.com/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
+  
